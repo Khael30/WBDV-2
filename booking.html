@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <title>Booking</title>
+</head>
+
+<body> 
+    <header>
+        <nav>
+            <ul>
+              <li class="logo"><a href="#"><b>Hello World</b></a></li>
+              <li class="hideOnMobile"><a href="#">Home</a></li>
+              <li class="hideOnMobile"><a href="#">Tutors</a></li>
+              <li class="hideOnMobile"><a href="#">Subjects</a></li>
+              <li class="hideOnMobile"><a href="#">About Us</a></li>
+              <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+              <li class="hideOnMobile"><a href="#">Account</a></li>
+            </ul>
+          </nav>
+    </header>
+    <div class="container">
+        <div class="box-form">
+            <h1 align="center">Booking for Tutoring</h1>
+            <form action="../PHP FILE/booking.php" method="post">
+                <div class="option">
+                    <label for="subjects"><b>Preferred Subject:</b></label>
+                    <select name="subjects" style="width: 265px;" required>
+                        <option value="" selected disabled>Select a Subject</option>
+                        <optgroup label="Programming Languages:">
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="c++">C++</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="c#">C#</option>
+                        </optgroup>
+
+                        <optgroup label="Data Structures and Algorithms:">
+                            <option value="array">Arrays, Linked Lists</option>
+                            <option value="stacks">Stacks, Queues</option>
+                            <option value="trees">Trees, Graphs</option>
+                            <option value="sorting">Sorting and Searching Algorithms</option>
+                        </optgroup>
+
+                        <optgroup label="Web Development:">
+                            <option value="frontend">Frontend Development (HTML, CSS, JavaScript)</option>
+                            <option value="backend">Backend Development (Node.js, PHP, Ruby on Rails)</option>
+                            <option value="frameworks">Web Frameworks (React, Angular, Vue.js)</option>
+                            <option value="database">Database Integration (SQL, NoSQL)</option>
+                        </optgroup> 
+                    </select>
+                </div>
+
+                <div class="option">
+                    <label for="tutors"><b>Chosen Tutor:</b></label>
+                    <select name="tutors" required>
+                        <option value="" selected disabled>Select Tutor</option>
+                        <optgroup label="Available Teachers:">
+                            <option value="juan">Sir Juan dela Cruz</option>
+                            <option value="maria">Ms. Maria Santos</option>
+                            <option value="antonio">Sir Antonio Reyes</option>
+                            <option value="carlos">Sir Carlos Fernandez</option>
+                            <option value="liza">Ms. Liza Torres</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="option">
+                    <label for="date"><b>Preferred Date:</b></label>
+                    <input type="date" name="date" required>
+                </div>
+
+                <div class="option">
+                    <label for="time"><b>Preferred Time:</b></label>
+                    <input type="time" name="time" required>
+                </div>   
+
+                <div class="submit">
+                    <input type="submit" name="submit" value="Book now"> 
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

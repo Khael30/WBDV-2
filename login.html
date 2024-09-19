@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+              <li class="logo"><a href="#"><b>Hello World</b></a></li>
+              <li class="hideOnMobile"><a href="#">Home</a></li>
+              <li class="hideOnMobile"><a href="#">Tutors</a></li>
+              <li class="hideOnMobile"><a href="#">Subjects</a></li>
+              <li class="hideOnMobile"><a href="#">About Us</a></li>
+              <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+              
+              
+            </ul>
+          </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="box form-box">
+            <header>Login</header>
+            <form action="../PHP FILE/AccountLogin.php" method="post">
+                <div class="field input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="field input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="field">
+                    <input type="submit" class="btn" name="submit" value="Login" required>
+                </div>
+                <div class="signup">
+                    Don't have account?<a href="registration.html">Sign up now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
